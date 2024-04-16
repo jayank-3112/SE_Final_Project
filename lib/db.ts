@@ -29,6 +29,7 @@ export const connect = async () => {
         connectTimeoutMS : 30000
     })
     cached.conn = await cached.promise;
+    console.log(cached.conn);
     return cached.conn;
 
 }
